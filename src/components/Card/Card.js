@@ -1,29 +1,25 @@
 import React from "react";
-import picture from "../../assets/mountian.png"
 import point from "../../assets/point.svg"
 
-export default function Card() {
+export default function Card(props) {
   return (
     <React.Fragment>
     <article className="card">
-        <img className="card--img" src={picture} alt="img"/>
+        <img className="card--img" src={props.imageUrl} alt="img"/>
         <div className="card--info">
             <div className="card--info_point">
                 <img src={point} alt="img"/>
-                <span>JAPAN</span>
-                <a href="/">View on google maps</a>
+                <span>{props.location}</span>
+                <a href={props.googleMapsUrl}>View on google maps</a>
             </div>
-                <h2 className="card--info_title">Mount Fuji</h2>
+                <h2 className="card--info_title">{props.title}</h2>
 
                 <div className="card--info_text">
-                  <span className="date">12 Jan, 2021 - 24 Jan, 2021</span>
-                  <p>Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters (12,380 feet). Mount Fuji is the single most popular tourist site in Japan, for both Japanese and foreign tourists.
+                  <span className="date">{props.startDate} - {props.endDate}</span>
+                  <p>
+                    {props.description}
                   </p>
                 </div>
-                
-           
-            
-            
         </div>
     </article>
   
