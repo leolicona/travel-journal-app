@@ -14,12 +14,14 @@ export default function Card() {
                 <a href="/">View on google maps</a>
             </div>
                 <h2 className="card--info_title">Mount Fuji</h2>
-            
-                <p>Aqui va la fecha</p>
-                <p>Esta es una breve descripción de el lugar del viaje a Japón en ql cual visite la montaña Fuji, para mas detalles por favor accede a mi blog
-                Esta es una breve descripción de el lugar del viaje a Japón en ql cual visite la montaña Fuji, para mas detalles por favor accede a mi blog
+
+                <div className="card--info_text">
+                  <span className="date">12 Jan, 2021 - 24 Jan, 2021</span>
+                  <p>Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters (12,380 feet). Mount Fuji is the single most popular tourist site in Japan, for both Japanese and foreign tourists.
+                  </p>
+                </div>
                 
-                </p>
+           
             
             
         </div>
